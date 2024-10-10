@@ -1,0 +1,270 @@
+/* Base styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(216, 237, 254);
+}
+
+nav {
+    height: 70px;
+    border-top: 2px solid grey;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);   
+}
+
+.navbar-text {
+    width: 100%;
+    font-size: 25px;
+    font-weight: 600;
+    color: aliceblue;
+    text-align: center;
+}
+
+.content {
+    margin-top: 80px;
+    width: 100%;
+    height: calc(100% - 100px);
+}
+
+.main {
+    width: 100%;
+    position: absolute;
+    margin: 70px auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    transition: filter 0.5s ease;
+}
+.choose-from {
+    width: 18%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.choose-from p {
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+}
+
+.choose-from select {
+    width: 18vh;
+    margin: 0px 10px 10px;
+    padding: 0px 5px;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-family: sans-serif;
+}
+
+option {
+    opacity: 0.9;
+    background-color: #eff7fa;
+}
+
+.text {
+    width: 50%;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#text {
+    outline: none;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 10px;
+}
+
+#text:hover,
+:focus {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+}
+
+.icon {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.copy {
+    margin: 8px 30px;
+    border: 1.5px solid;
+    font-size: 30px;
+    padding: 3px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.copy:hover {
+    color: white;
+    background-color: black;
+}
+
+.choose-to {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0px 0px 16%;
+}
+
+.choose-to p {
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+    text-align: end;
+}
+
+.choose-to select {
+    width: 18vh;
+    margin: 0px 10px 10px;
+    padding: 0px 5px;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-family: sans-serif;
+}
+
+.translate-btn {
+    width: 150px;
+    padding: 5px;
+    border: 2px solid black;
+    font-weight: 600;
+    margin: 10px auto 100px;
+}
+
+.translate-btn:hover {
+    background-color: black;
+    color: white;
+}
+
+.translated-result {
+    width: 50%;
+    margin: 20px auto;
+}
+
+#translatedText {
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 10px;
+}
+
+#translatedText:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+}
+
+.footer {
+    background-color: #1c1c1e;
+    color: #f1f1f1;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.footer h3{
+    font-weight: 900;
+}
+
+.footer-text {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.footer-rights {
+    font-size: 0.9rem;
+    margin: 0;
+    color: #b3b3b3;
+}
+
+/* Responsive styles */
+
+/* For devices with width less than 1200px (large tablets, small laptops) */
+@media (max-width: 1200px) {
+    .text {
+        width: 80%;
+    }
+
+    .choose-from
+    {
+        margin-left: 10px;
+        width: 100%;
+        justify-content: start;
+        
+    }
+    .choose-from p{
+        font-weight: 700;
+    }
+    .choose-to {
+        width: 100%;
+        justify-content: end;
+    }
+    .choose-to p{
+        font-weight: 700;
+    }
+
+    .translated-result {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    nav{
+        height: 70px;
+    }
+    .text {
+        width: 90%;
+    }
+
+    .choose-from,
+    .choose-to {
+        width: 100%;
+        align-items: center;
+    }
+
+    .choose-from p, 
+    .choose-to p {
+        text-align: center;
+    }
+
+    .translated-result {
+        width: 90%;
+    }
+    
+    .copy{
+        width: 50px;
+    }
+    .translate-btn{
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .text {
+        margin-top: -40px;
+        width: 95%;
+    }
+
+    .choose-from,
+    .choose-to {
+        width: 100%;
+    }
+
+    .choose-from p,
+    .choose-to p {
+        text-align: center;
+    }
+
+    .translated-result {
+        width: 95%;
+    }
+
+    .translate-btn {
+        width: 120px;
+        font-size: 14px;
+    }
+}
