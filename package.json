@@ -1,6 +1,6 @@
 {
   "name": "text-translator",
-  "homepage": "https://SahilDhage555.github.io/Text-Translator",
+  "homepage": "https://SahilDhage555.github.io/PolyLingo",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -17,7 +17,6 @@
     "bootstrap": "^5.3.3",
     "cors": "^2.8.5",
     "express": "^4.21.1",
-    "gh-pages": "^6.1.1",
     "mongoose": "^8.7.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
@@ -55,5 +54,8 @@
   "main": "index.js",
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "gh-pages": "^6.2.0"
+  }
 }
