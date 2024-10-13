@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/PolyLingo/static/css/main.5334e347.css",
+    "main.js": "/PolyLingo/static/js/main.7276f478.js",
+    "index.html": "/PolyLingo/index.html",
+    "main.5334e347.css.map": "/PolyLingo/static/css/main.5334e347.css.map",
+    "main.7276f478.js.map": "/PolyLingo/static/js/main.7276f478.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5334e347.css",
+    "static/js/main.7276f478.js"
+  ]
+}
